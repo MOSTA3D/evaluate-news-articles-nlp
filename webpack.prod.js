@@ -7,7 +7,7 @@ module.exports = {
     mode: 'production',
     output: {
         libraryTarget: "var",
-        ligrary: "Client"
+        library: "Client"
     },
     module: {
         rules: [
