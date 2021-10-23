@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Sentiment Analyzer</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+          <div>My.<span>Logo</span></div>
+          <div>Evaluate news with <span>N</span><span>L</span><span>P</span></div>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <p>Enter a URL of an article to start Sentiment analysis.</p>
+        <section>
+          <form id="form">
+            <label for="article-url">URL</label>
+            <input id="article-url" type="text" name="input" value="" placeholder="Enter Article URL here" />
+            <button
+              type="submit"
+              class="btn-submit"
+            >
+              Submit
+            </button>
+          </form>
+        </section>
+
+        <section>
+          <strong>Results</strong>
+        </section>
+      </div>
+    </main>
+    <footer>This is normal footer &COPY;</footer>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/service-worker.js')
+        })
+      }
+    </script>
+  </body>
+</html>
