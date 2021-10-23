@@ -8,7 +8,7 @@ module.exports = {
     stats: 'minimal',
     output: {
         libraryTarget: "var",
-        ligrary: "Client"
+        library: "Client"
     },
     module: {
         rules: [
